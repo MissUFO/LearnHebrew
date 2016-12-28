@@ -1,0 +1,26 @@
+<ion-view view-title="" cache-view="false" >
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+  <ion-content>
+      <div class="text-content">
+         <h1>Buy the App</h1>
+         <div ng-show="(isFullVersion==1)" >
+              <p style="text-align:center">You already have a full version. All content are available for you.</p>
+         </div>
+         <div ng-hide="(isFullVersion==1)">
+                  <p style="text-align:center">If you want to have full version with all the words, you can buy it now.</p>
+                  <div class="buttons">
+                      <button class="btn-send" ng-click="btnBuyFull()">BUY FULL VERSION</button>
+                  </div>
+          </div>
+          <div ng-hide="(isFullVersion==1)" >
+              <p> </p>    
+              <p style="text-align:center">If you already bought the app and have reinstalled it, you can restore the previous purchase.</p>
+                  <div class="buttons">
+                      <button class="btn-send" ng-click="btnRestorePurchase()">RESTORE PURCHASE</button>
+                  </div>
+              </div>
+          </div>
+</ion-content>
+</ion-view>

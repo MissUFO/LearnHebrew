@@ -1,0 +1,38 @@
+<ion-view view-title="">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+               <div class="tab-bar">            
+                   <a class="btn-tabs" href="#/app/words-index/word-numeric/{{id}}">Numeric</a>
+                   <a class="btn-tabs" href="#/app/words-index/word-pictorial/{{id}}">Pictorial</a>
+                   <a class="btn-tabs active" href="#/app/words-index/word-conventional/{{id}}">Conventional</a>
+               </div>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="word-content" ng-show="isLoaded">
+            <div class="word-main" >
+                    <table align="center" >
+                        <tr>
+                            <td><h1  >{{word.name}} <span class="speaker"><img src="images/icon-speaker.png" ng-click="playAudio()" /> <img src="images/icon-speaker.png" ng-click="playAudio2()" /> <audio id="audioCtrl"></audio></span></h1></td>
+                        </tr>
+                    </table>
+                    <table align="center">                       
+                        <tr>
+                            <td ng-repeat="w in word.conventionalmeaning" class="{{ getClass(word.conventionalmeaning) }}" width="{{ getWidth(word.conventionalmeaning) }}">
+                                <div class="conventional-meaning">
+                                    <div class="picture"><img ng-src="{{ getPictureImg(word, w.letter) }}" imageonload="imgLoadCompleted('conventional')" /></div>
+                                    <div class="letter">
+                                        <img ng-src="{{ getLetterImg(word, w.letter) }}" imageonload="imgLoadCompleted('conventional')" />
+                                    </div>
+                                    <div class="letter-value">{{w.letter}}</div>
+                                    <div class="number">{{w.numeric}}</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="word-description" ng-bind-html="word.conventionaltext">
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

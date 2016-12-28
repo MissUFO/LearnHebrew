@@ -1,0 +1,39 @@
+<ion-side-menus enable-menu-with-back-views="false" draggable="false">
+  <ion-side-menu-content draggable="false">
+    <ion-nav-bar class="bar-stable" can-swipe-back="true">      
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" draggable="false">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Learn Hebrew</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/home">
+          Home
+        </ion-item>      
+        <ion-item nav-clear menu-close href="#/app/words-index">
+          Word Index
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/about">
+          About
+        </ion-item>  
+        <ion-item nav-clear menu-close href="#/app/contact">
+          Contact Us
+        </ion-item> 
+        <ion-item nav-clear menu-close href="#" ng-click="btnShare()">
+          Share with a friend
+        </ion-item>    
+        <ion-item nav-clear menu-close href="#/app/purchase">
+          Buy the App
+        </ion-item>    
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

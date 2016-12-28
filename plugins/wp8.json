@@ -1,0 +1,81 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"wp-package\" value=\"SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"wp-package\" value=\"SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"wp-package\" value=\"Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"wp-package\" value=\"Globalization\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"wp-package\" value=\"File\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "Properties/WMAppManifest.xml": {
+                "parents": {
+                    "/Deployment/App/Capabilities": [
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
+                            "count": 2
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "cc.fovea.cordova.purchase": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "org.pushandplay.cordova.apprate": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        },
+        "org.apache.cordova.globalization": {
+            "PACKAGE_NAME": "{ae8429a0-24ac-11e5-98b2-0f132212e567}"
+        }
+    }
+}

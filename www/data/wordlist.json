@@ -1,0 +1,67 @@
+﻿{
+
+  {
+    "wordlist": [
+      {
+        "id": 1001,
+        "name": "Aaron",
+        "shortdesc": "The brother Moses and Miriam; the first 'Kohen Gadol' of High Priest of Israel.",
+        "selected": 1
+      },
+      {
+        "id": 1002,
+        "name": "ABBA",
+        "shortdesc": "Aramaic. n Abba. 'Daddy', 'dear Father', 'papa'; a term of endearment for one's father.",
+        "selected": 0
+      },
+      {
+        "id": 1003,
+        "name": "Adam",
+        "shortdesc": "Means human being or person; related to words 'red' and 'earth'.",
+        "selected": 1
+      },
+      {
+        "id": 1004,
+        "name": "Adonai",
+        "shortdesc": "Hebrew. Means lord",
+        "selected": 1
+      },
+      {
+        "id": 1005,
+        "name": "Bethlehem",
+        "shortdesc": "Means the House of Bread.",
+        "selected": 0
+      },
+      {
+        "id": 1006,
+        "name": "Darkness",
+        "shortdesc": "Means the opposite of light; the absence of light.",
+        "selected": 0
+      },
+      {
+        "id": 1007,
+        "name": "Day",
+        "shortdesc": "The interval of light between two successive nights.",
+        "selected": 0
+      },
+      {
+        "id": 1008,
+        "name": "Eden",
+        "shortdesc": "Biblical Garden God planted for man as described in book of Genesis.",
+        "selected": 1
+      },
+      {
+        "id": 1009,
+        "name": "ELOHIM",
+        "shortdesc": "Creator of all things.",
+        "selected": 0
+      },
+      {
+        "id": 1010,
+        "name": "Evening",
+        "shortdesc": "The period from sunset to bedtime.",
+        "selected": 1
+      }
+    ]
+  }
+}

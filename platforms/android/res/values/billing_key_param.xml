@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="billing_key_param">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzxPtOQdRYKIgrIxReornM/MyEZ+UMwacrfvtUGdErKPmocTLtQk6GAcLPy9Yka4auvX5BGm4aqZ1jz8ZJMvxdKTYBu6k8ubg2Pzh9vPp/heGsZK+/C9So0/WugukXn8E117aHLK/mzxnJXWDhacuTBBPMGqe6Dyt9GfJgVObKaYXGNUZaZiP24IVczwqwGEoX3MDiZ/hiHdVteho0lpRw5bnTOJk69lUR0XEiw3euZ5n8Ww4gH3gtMV7zrx6MkSqu4vrTUrvq0VfqSvLXQZ0fg3+ZwPKWSflAHylihZuwHvQ621+w2fGw5gYYjHT17Pg/rq7AR6VK4sEcgMbGq0mqwIDAQAB</string>
+    <string name="billing_key_param">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgzCZospr8zg/mN6jyMLT7xcnYhl2sGyYs0Y4Ue+NXp0+3bNhXCbu/vwskbUtobKZ6mrTGp8I3WytLHPoT1U9EwI/0464WNsVgElJCqTZxUxs1VQTA5JSfFVj8qFXGu4tiK1Qgu2VNzdlngNveKCpkbh1MerhpsxI4fJadB8SZWOFrDAtOui0wCLKUq/GnDIwW0wbCRD4LBSM7XJ7mRiOItmOuHTX7/mGAsr1S/EQyWowvwCF9uvRbM/SiD8StSkeLOp0m9N7uD18dUO+Vzj2UpDJ/Ca0rjoU5mzhQi7LzFqrb/SPzzIfH0trUEOKbYdoB4isvolarYk50fJBxxxsGwIDAQAB</string>
+</resources>

@@ -1,0 +1,97 @@
+{
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.splashscreen"
+        }
+    },
+    "cc.fovea.cordova.purchase": {
+        "source": {
+            "type": "registry",
+            "id": "cc.fovea.cordova.purchase@3.11.0"
+        }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.inappbrowser"
+        }
+    },
+    "nl.x-services.plugins.socialsharing": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Work\\Elance\\LearnHebrew\\LearnHebrew\\plugins\\nl.x-services.plugins.socialsharing"
+        }
+    },
+    "cordova-plugin-x-socialsharing": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin",
+            "subdir": "."
+        }
+    },
+    "org.pushandplay.cordova.apprate": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pushandplay/cordova-plugin-apprate",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
+    },
+    "org.apache.cordova.globalization": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.globalization"
+        }
+    },
+    "org.apache.cordova.media": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.media"
+        }
+    },
+    "org.apache.cordova.file": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file"
+        }
+    },
+    "cordova-plugin-media": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ghenry22/cordova-plugin-media",
+            "subdir": "."
+        }
+    },
+    "org.nypr.cordova.vlcplugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wnyc/cordova-plugin-vlc",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
+    },
+    "org.nypr.cordova.nslogger-cocoalumberjack-connector-plugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wnyc/cordova-plugin-nslogger-cocoalumberjack-connector.git",
+            "subdir": "."
+        }
+    }
+}

@@ -1,0 +1,43 @@
+﻿<ion-view view-title="">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        <div class="tab-bar">
+            <a class="btn-tabs active" href="#/app/words-index/word-numeric/{{id}}">Numeric</a>
+            <a class="btn-tabs" href="#/app/words-index/word-pictorial/{{id}}">Pictorial</a>
+            <a class="btn-tabs" href="#/app/words-index/word-conventional/{{id}}">Conventional</a>
+        </div>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="word-content" ng-hide="{{ word==null }}">
+            <div class="word-main">
+                <h1>{{word.name}}</h1>                
+                    <table class="numeric-meaning">
+                        <tbody>
+                            <tr ng-repeat="w in word.numericmeaning">
+                                <td class="letter-img">
+                                    <img src="{{ getLetterImg(word, w.letter) }}" />
+                                    <div class="letter-title">{{w.letter}}</div>
+                                    <div class="numeric">{{w.numeric}}</div>
+                                </td>
+                                <td>
+                                    <div class="title">
+                                        {{w.letter}} - {{w.numeric}}
+                                    </div>
+                                    <div class="definition">
+                                        {{w.definition}}
+                                    </div>
+                                    <div class="selected">
+                                        {{w.selected}}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <!--</div>-->
+            </div>
+            <div class="word-description" ng-bind-html="word.numerictext">
+              
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

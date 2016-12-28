@@ -1,0 +1,35 @@
+﻿<ion-view view-title="">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        <div class="tab-bar">
+            <a class="btn-tabs" href="#/app/words-index/word-numeric/{{id}}">Numeric</a>
+            <a class="btn-tabs active" href="#/app/words-index/word-pictorial/{{id}}">Pictorial</a>
+            <a class="btn-tabs" href="#/app/words-index/word-conventional/{{id}}">Conventional</a>
+        </div>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="word-content">
+            <div class="word-main">
+                <h1>{{word.name}}</h1>
+
+                    <table class="pictorial-meaning">
+                        <tr ng-repeat="w in word.pictorialmeaning">
+                            <td class="picture"><img src="{{ getPictureImg(word, w.letter) }}" /></td>
+                            <td class="dashed-line">
+                                <div class="letter-img">
+                                    <img src="{{ getLetterImg(word, w.letter) }}" />
+                                </div>
+                                <div class="letter-title">{{w.letter}}</div>
+                                <div class="definition">{{w.definition}}</div>
+                                <div class="selected">{{w.selected}}</div>
+                            </td>
+                        </tr>                        
+                    </table>
+                <!--</div>-->
+            </div>
+            <div class="word-description" ng-bind-html="word.pictorialtext">
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

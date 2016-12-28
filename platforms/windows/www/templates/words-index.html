@@ -1,0 +1,36 @@
+﻿<ion-view  view-title="">  
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        <div class="search-bar item-input-inset">
+            <ion-search class="search-wrapper-light" placeholder="search in dictionary" min-length="1" model="words" source="getWorldByName(str)" ></ion-search>
+        </div>
+    </ion-nav-buttons>
+    
+  <ion-content > 
+      <div class="word-index-content">
+          <h1>Word Index</h1>
+
+          <div class="letter {{ currentSearchValue!='' && currentSearchValue.toLowerCase()==ch.toLowerCase() ? 'active' : '' }}" ng-repeat="ch in characters" ng-click="getWorldByLetter('{{ch}}')">
+                  {{ch}}
+          </div>
+
+          <div class="clear"></div>                 
+          <div class="words-list" style="{{ (words==null || words==undefined || words.length==0)? 'display:none' : '' }}" >
+              <ion-list >
+                  <ion-item ng-repeat="w in words | filter:search.value | orderBy:name" class="item item-complex {{ $index == 0? 'first' : '' }}">
+                      <a class="item-content" href="#" ng-click="gotoWordConventional('#/app/words-index/word-conventional/', {{w.id}}, {{w.selected}})">
+                          <table>
+                              <tr>
+                                  <td>{{w.name}}<p>{{w.shortdesc}}</p></td>
+                                  <td class="selected-word" ng-hide="{{ w.selected==0 && isFullVersion==0 }}"><img src="images/check-circle.png" /></td>
+                              </tr>
+                          </table>
+                      </a>
+                  </ion-item>
+              </ion-list>
+          </div>
+      
+      </div>
+  </ion-content>
+
+</ion-view>

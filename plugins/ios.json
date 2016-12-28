@@ -1,0 +1,88 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "StoreKit.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Social.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "MessageUI.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MobileCoreServices.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [],
+                    "CFNetwork.framework": [],
+                    "MediaPlayer.framework": [],
+                    "AudioToolbox.framework": [],
+                    "CoreText.framework": [],
+                    "QuartzCore.framework": [],
+                    "OpenGLES.framework": [],
+                    "Security.framework": [],
+                    "libstdc++.6.0.9.dylib": [],
+                    "libbz2.dylib": [],
+                    "libiconv.dylib": []
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"InAppPurchase\"><param name=\"ios-package\" value=\"InAppPurchase\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cc.fovea.cordova.purchase": {
+            "PACKAGE_NAME": "com.rockislandbooks.hebrewcompanion"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.rockislandbooks.hebrewcompanion"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.rockislandbooks.hebrewcompanion"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "com.rockislandbooks.hebrewcompanion"
+        }
+    },
+    "dependent_plugins": {}
+}
